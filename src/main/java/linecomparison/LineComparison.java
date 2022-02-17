@@ -37,6 +37,17 @@ public class LineComparison {
         double b = Math.pow((b2 - b1), 2);
         double length1 = Math.floor(Math.sqrt(a + b));
         System.out.println("Length is: " + length1);
+        
+        //UC3 - Length comparison
+        int result = length.compareTo(length1);
+        System.out.println("Compare both lenghts is: " + result);
+        if (result == 0) {
+            System.out.println("This line is equals");
+        } else if (result > 0) {
+            System.out.println("First line is greater then second");
+        } else if (result < 0) {
+            System.out.println("Second line is greater then first");
+        }
 
 	}
 
